@@ -1,24 +1,5 @@
 /* hoja de estilo css */
 
-/* paleta de colores 
-paleta 1 
-#EEE5E9 lavanda pausa (CLARO)
-#F9CB40 amarillo calle
-#060607 cemento mojado
-#183B1A verde bosque
-#BCD979 verde crema
-#470C0B sangre
-
-paleta 2 desaturada
-
-#391717 sangre 
-#4F5076 azul 
-#FFFA64 amarillito
-#E2D9C6 hueso
-+ negro
-*/
-
-
 /* pa todo*/
 
 body {
@@ -26,33 +7,43 @@ body {
     background-size: cover;
 }
 
-html{
+html {
     font-size: 62.5%;
 }
 
 /* encabezado o header */
 
-.colorfondo{
+
+.colorfondo {
     background-color: rgb(0, 0, 0);
 }
 
-.logo{
-    width: 40%;
+.logo {
+    width: 25%;
     height: max-content;
 }
 
+@media (max-width:550px) {
+    .headerMQ {
+        display: flex;
+        justify-content: center;
+        margin-right: 0px;
+        padding-right: 0px;
+    }
 
- .hea {
-    height: 15%;
+}
+
+.hea {
+    height: 10%;
     position: sticky;
     top: 0px;
 
-} 
+}
 
-.anclas{
+.anclas {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    text-transform:lowercase;
+    text-transform: lowercase;
     /* font-style: italic; */
     font-size: 1.5rem;
     font-family: var(--bs-body-font-family);
@@ -60,16 +51,16 @@ html{
     letter-spacing: 0.4rem;
 }
 
-.anclas:hover{
+.anclas:hover {
     color: rgba(227, 230, 97, 0.8);
 }
 
 .iconoMenu {
-    background-color:rgb(255, 255, 255); 
+    background-color: rgb(255, 255, 255);
 }
 
 
-@media (max-width:991px){
+@media (max-width:991px) {
     .menuMQ {
         background-color: rgba(255, 255, 255, 0.048);
         margin: 2px;
@@ -80,24 +71,9 @@ html{
 
 /* fin encabezado */
 
-/* -------------------MAINS--------------------------- */
+/* -------------------MAINs--------------------------- */
 
 /* inicio ----------------------------------------------------------------------------------------------------------------------*/
-
-.mainInicio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 530px;
-    /* esto no sabia como hacerlo*/
-}
-
-.presentacion {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0 60px;
-}
 
 
 /* main Leer/Escuchar */
@@ -191,48 +167,10 @@ html{
 
 /* red ----------------------------------------------------------------------------------------------------------------------------*/
 
-.columnas {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    height: 530px;
-  }
-  
-  .dosColumnas {
-    margin-top: 40px;
-    display: flex;
-    width: 80%;
-    justify-content: space-between;
-  }
-  
-  .formulario {
-    width: 45%;
-    text-align: center;
-  }
-  form{
+form {
     text-align: center;
     font-style: italic;
-  }
-
-  /* label, input, textarea {
-    display: flex;
-    margin-bottom: 1px;
-  } */ /* ----- no pude darle estilo al formulario */
-
-   .laRed {
-    width: 45%;
-    text-align: center;
-  }
-
-  .laRed img {
-    width: 300px;
-  }
-  
-  .laRed h2, .formulario h2 {
-    margin: 0, auto, 10px, auto ;
-    text-transform: uppercase;
-  }
+}
 
 /* fin cuerpo */
 
@@ -240,10 +178,11 @@ html{
 
 footer {
     background-color: rgba(182, 184, 62, 0.8);
-    height: 50px;
+    height: 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 7px;
 }
 
 footer p {
