@@ -1,0 +1,249 @@
+/* hoja de estilo css */
+
+/* paleta de colores 
+paleta 1 
+#EEE5E9 lavanda pausa (CLARO)
+#F9CB40 amarillo calle
+#060607 cemento mojado
+#183B1A verde bosque
+#BCD979 verde crema
+#470C0B sangre
+
+paleta 2 desaturada
+
+#391717 sangre 
+#4F5076 azul 
+#FFFA64 amarillito
+#E2D9C6 hueso
++ negro
+*/
+
+/* pa todo*/
+body {
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+}
+
+/* encabezado o header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-right: 40px;
+    margin: 0 40px 0 0;
+    /* + rayas divisorias */
+}
+
+nav a {
+    margin: 0 40px;
+    text-decoration: none;
+    color: black;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 25px;
+}
+
+h1 {
+    margin-left: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+    word-spacing: 19px;
+}
+
+/* fin encabezado */
+
+/* -------------------MAINS--------------------------- */
+
+/* inicio ----------------------------------------------------------------------------------------------------------------------*/
+
+.mainInicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+    /* esto no sabia como hacerlo*/
+}
+
+.presentacion {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 60px;
+}
+
+
+/* main Leer/Escuchar */
+
+.centro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 530px;
+    /* esto no sabia como hacerlo*/
+}
+
+/* leer ----------------------------------------------------------------------------------------------------------------------------*/
+
+
+.leerSection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.lecturaArt {
+    width: 200px;
+    height: 200px;
+    margin: 0 40px;
+    text-align: center;
+}
+
+.lecturaArt img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* escuchar ----------------------------------------------------------------------------------------------------------------------------*/
+
+.oirSection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+
+.audioArt {
+    width: 200px;
+    height: 200px;
+    margin: 0 40px;
+    text-align: center;
+}
+
+.audioArt img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* tienda ----------------------------------------------------------------------------------------------------------------------------*/
+
+.mainTienda {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 530px;
+    /* esto no sabia como hacerlo*/
+}
+
+.textoTienda {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 60px;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 160px;
+}
+
+.producto {
+    width: 200px;
+    height: 200px;
+    margin: 0 100px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* red ----------------------------------------------------------------------------------------------------------------------------*/
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 530px;
+  }
+  
+  .dosColumnas {
+    margin-top: 40px;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  
+  .formulario {
+    width: 45%;
+    text-align: center;
+  }
+  form{
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* label, input, textarea {
+    display: flex;
+    margin-bottom: 1px;
+  } */ /* ----- no pude darle estilo al formulario */
+
+   .laRed {
+    width: 45%;
+    text-align: center;
+  }
+
+  .laRed img {
+    width: 300px;
+  }
+  
+  .laRed h2, .formulario h2 {
+    margin: 0, auto, 10px, auto ;
+    text-transform: uppercase;
+  }
+
+/* fin cuerpo */
+
+/* y footeeeeeer maldision */
+
+footer {
+    background-color: rgba(182, 184, 62, 0.8);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 15px;
+    color: whitesmoke;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    margin-right: 15px;
+}
+
+footer li {
+    margin: 0 30px;
+}
+
+footer a img {
+    height: 20px;
+    width: 20px;
+}
+
+/* FIN x ahora */
