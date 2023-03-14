@@ -24,6 +24,8 @@ html {
 	@include parrafos(12, center)
 }
 
+/*INICIO ------------------------------------------------------------------*/
+
 .secPortada {
 	font-size: 2rem;
 	color: $color_3;
@@ -40,6 +42,7 @@ html {
 		color: $color_4;
 	}
 }
+
 .botonATienda {
 	height: 4rem;
 	width: 30rem;
@@ -66,6 +69,7 @@ html {
 	background-image: url(../img/fondo.jpg);
 	background-size: 20px 20px;
 }
+
 .secTienda {
 	height: 30rem;
 	display: flex;
@@ -91,15 +95,23 @@ html {
 	text-transform: uppercase;
 	background-image: linear-gradient(to bottom, #ffffff, rgba(182, 184, 62, 0.8) );
 }
+
+/*MANIFIESTO ----------------------------------------------------------*/
+
 .manifiesto {
 	font-size: 2rem;
 }
+
+/*CONTACTO -----------------------------------------------------------*/
+
 .secContacto {
 	font-size: 1.5rem;
 	display: flex;
 	align-items: top;
 	justify-content: space-around;
 }
+
+
 form {
 	text-align: left;
 	font-style: italic;
