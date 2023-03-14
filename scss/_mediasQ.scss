@@ -1,0 +1,41 @@
+/*medias queris*/
+
+@media (max-width:600px) {
+	.logo {
+		width: 60%;
+	}
+}
+@media (max-width:550px) {
+	.headerMQ {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		margin-right: 0px;
+		padding-right: 0px;
+	}
+}
+@media (max-width:991px) {
+	.menuMQ {
+		background-color: $background-color_3;
+		margin: 1px;
+		border-radius: 4px;
+	}
+}
+@media (max-width:720px) {
+	.secManifiesto {
+		p {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+	}
+}
+@media (max-width:412px) {
+	.secManifiesto {
+		p {
+			font-size: 1rem;
+			font-weight: bold;
+		}
+	}
+}
+
+/*fin mediasqueris*/
