@@ -53,6 +53,7 @@ html {
   text-align: center;
 }
 
+/*INICIO ------------------------------------------------------------------*/
 .secPortada {
   font-size: 2rem;
   color: #ffffff;
@@ -123,10 +124,12 @@ html {
   background-image: linear-gradient(to bottom, #ffffff, rgba(182, 184, 62, 0.8));
 }
 
+/*MANIFIESTO ----------------------------------------------------------*/
 .manifiesto {
   font-size: 2rem;
 }
 
+/*CONTACTO -----------------------------------------------------------*/
 .secContacto {
   font-size: 1.5rem;
   display: flex;
@@ -171,7 +174,7 @@ form {
 }
 
 .iconoMenu {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(255, 255, 255);
   margin-right: 15px;
 }
 
