@@ -40,8 +40,7 @@
 }
 
 body {
-  background-image: url("../img/fondo.jpg");
-  background-size: cover;
+  background-color: white;
 }
 
 html {
@@ -66,6 +65,9 @@ html {
   background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
   filter: blur(70%);
 }
+.secPortada h1 {
+  font-size: 4rem;
+}
 .secPortada a {
   text-transform: capitalize;
   color: black;
@@ -77,8 +79,8 @@ html {
   font-size: 2rem;
   color: #000000;
   font-weight: bold;
-  background-color: rgba(182, 184, 62, 0.8);
-  border: 0.5 rgba(111, 112, 33, 0.911) inset;
+  background-color: #f58723;
+  border: 0.5 #f58723 inset;
   font-style: italic;
   text-transform: uppercase;
 }
@@ -108,6 +110,9 @@ html {
   text-transform: uppercase;
   background: black;
 }
+.secTienda h3 {
+  font-size: 3.5rem;
+}
 .secTienda a img {
   height: 15rem;
   width: 20rem;
@@ -121,9 +126,77 @@ html {
   justify-content: space-between;
   color: black;
   text-transform: uppercase;
-  background-image: linear-gradient(to bottom, #ffffff, rgba(182, 184, 62, 0.8));
+  background-image: linear-gradient(to bottom, #ffffff, #f58723);
 }
 
+/*TIENDA-----------------------------------------------------------*/
+.holaTienda {
+  background: linear-gradient(to bottom, rgb(255, 255, 255), #f58723);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30rem;
+  flex-direction: column;
+}
+
+.amuPoesia {
+  background: linear-gradient(to bottom, #f58723, #f1ecdf);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30rem;
+}
+
+.amuPintura {
+  background: linear-gradient(to bottom, #f1ecdf, #c7ba99);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30rem;
+}
+
+.amuFotografia {
+  background: linear-gradient(to bottom, #c7ba99, white);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 30rem;
+}
+
+.dataTienda {
+  background: linear-gradient(rgb(255, 255, 255), white, white, white, white);
+  height: 25rem;
+}
+.dataTienda .dataUno {
+  background: linear-gradient(white, white, #f58723);
+}
+
+.talle {
+  background: linear-gradient(white, white, #d4c9ad);
+  height: 25rem;
+}
+
+.refaccion {
+  background: linear-gradient(#d4c9ad, white);
+  height: 25rem;
+}
+
+.tiempoDeEspera {
+  background: linear-gradient(white, #c7ba99);
+  height: 25rem;
+}
+
+.amuCircular {
+  background: linear-gradient(#c7ba99, #f58723);
+  height: 25rem;
+}
+
+/*
+
+talle
+refaccion
+tiempoDeEspera
+amuCircular*/
 /*MANIFIESTO ----------------------------------------------------------*/
 .manifiesto {
   font-size: 2rem;
@@ -181,7 +254,7 @@ form {
 /*Fin header ---------------------------------------*/
 /*footer ---------------------------------*/
 footer {
-  background-color: rgba(182, 184, 62, 0.8);
+  background-color: #f58723;
   height: 8%;
   display: flex;
   justify-content: space-between;

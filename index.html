@@ -9,6 +9,10 @@
   <!-- link bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- link css mio -->
   <link rel="stylesheet" href="css/estilo.css">
 </head>
@@ -56,9 +60,11 @@
    <main>
   <!-- portada -->
   <section class="secPortada container-fluid p-5">
-  <h1 class="text-center mb-5 mt-5">HOLA!</h1>
+  <h1 class="text-center mb-5 mt-5 animate__animated animate__slideInDown">HOLA!</h1>
   <p>introduccion al mundo amuleto Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati iure ex nisi quas eum, dignissimos praesentium harum quasi accusantium aperiam unde neque fugiat delectus voluptates quae facere impedit alias.</p>
-  <button class="botonATienda"> > tienda</button>
+  <button data-aos="flip-left"
+  data-aos-easing="ease-out-cubic"
+  data-aos-duration="2000" class="botonATienda"> > tienda</button>
   <a href="#navegar">quiero saber mas</a>
   <a name="navegar" id="navegar"></a>
   </section>
@@ -66,14 +72,14 @@
   <!-- manifiesto -->
   
   <section class="secManifiesto text-center container-fluid p-5"> 
-  <p>Amuleto nace de Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos vero dolorem illum adipisci ea maxime nisi animi voluptatibus repellat eveniet porro consequatur nemo ratione, voluptatem repellendus maiores expedita doloribus atque accusantium modi ad possimus eos laudantium! Commodi, pariatur ullam.</p>
+  <p data-aos="zoom-in" >Amuleto nace de Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto dignissimos vero dolorem illum adipisci ea maxime nisi animi voluptatibus repellat eveniet porro consequatur nemo ratione, voluptatem repellendus maiores expedita doloribus atque accusantium modi ad possimus eos laudantium! Commodi, pariatur ullam.</p>
   <a href="html/leer.html">leer mas</a>
   </section>
   
   <!-- amuletos de la temporada -->
 
   <section class="secTienda container-fluid p-5">
-    <h3>amuletos de la temporada >>></h3>
+    <h3 data-aos="fade-right">amuletos de la temporada >>></h3>
     <a href="html/tienda.html"><img src="img/31d5bfbe270a747a29e831a05680e4db.gif" alt="fotoProducto"></a>
   </section>
 
@@ -82,17 +88,18 @@
   <section class="secRed container-fluid p-5">
     <h2>Artistas</h2>
     <div>
-      <h3>Juli Di maria</h3>
-      <h5>poesia</h5>
+      <h3 data-aos="flip-right">Juli Di maria</h3>
+      <h5 data-aos="fade-left" >poesia</h5>
     </div>
     <div>
-      <h3>Sol Heideger</h3>
-      <h5>pintura</h5>   
+      <h3 data-aos="flip-right">Sol Heideger</h3>
+      <h5 data-aos="fade-left">pintura</h5>   
     </div>
     <div>
-      <h3>Ger Deleuze</h3>
-      <h5>fotografia</h5>
+      <h3 data-aos="flip-right">Ger Deleuze</h3>
+      <h5 data-aos="fade-left">fotografia</h5>
     </div>
+    <br>
     <a href="html/red.html">mas sobre ellxs</a>
   </section>
 </main>
@@ -107,6 +114,12 @@
       <li><a href="#"> <img src="img/help-circle.svg" alt="ayuda"> </a></li>
     </ul>
   </footer>
+
+  <!-- Script/Inicio Aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+    </script>
 
   <!-- Script btsp -->
 

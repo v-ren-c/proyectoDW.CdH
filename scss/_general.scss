@@ -7,8 +7,7 @@
 }
 
 body {
-	background-image: url("../img/fondo.jpg");
-	background-size: cover;
+	background-color: white;
 }
 
 html {
@@ -37,6 +36,9 @@ html {
 	justify-content: center;
 	background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
 	filter: blur(70%);
+	h1{
+		font-size: 4rem;
+	}
 	a {
 		text-transform: capitalize;
 		color: $color_4;
@@ -50,7 +52,7 @@ html {
 	color: $color_5;
 	font-weight: bold;
 	background-color: $background-color_4;
-	border: 0.5 rgba(111, 112, 33, 0.911) inset;
+	border: 0.5 $background-color_4 inset;
 	font-style: italic;
 	text-transform: uppercase;
 }
@@ -78,6 +80,9 @@ html {
 	color: $color_3;
 	text-transform: uppercase;
 	background: black;
+	h3 {
+		font-size: 3.5rem;
+	}
 	a {
 		img {
 			height: 15rem;
@@ -93,8 +98,82 @@ html {
 	justify-content: space-between;
 	color: $color_4;
 	text-transform: uppercase;
-	background-image: linear-gradient(to bottom, #ffffff, rgba(182, 184, 62, 0.8) );
+	background-image: linear-gradient(to bottom, #ffffff, $background-color_4 );
 }
+
+/*TIENDA-----------------------------------------------------------*/
+
+@mixin estiloTienda ($color1, $color2){
+    background: linear-gradient(to bottom, $color1, $color2);
+}
+
+@mixin fijoTienda {
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 30rem;
+}
+
+
+
+.holaTienda {
+   @include estiloTienda(rgb(255, 255, 255),#f58723 );
+	@include fijoTienda;
+	flex-direction: column;
+	
+
+}
+.amuPoesia {
+	@include estiloTienda(#f58723 ,#f1ecdf);
+	@include fijoTienda;
+	
+}
+.amuPintura {
+	@include estiloTienda(#f1ecdf,#c7ba99);
+	@include fijoTienda;	
+	
+}
+.amuFotografia {
+	@include estiloTienda( #c7ba99,white);
+	@include fijoTienda;
+	
+}
+
+.dataTienda {
+	background: linear-gradient(rgb(255, 255, 255), white, white, white, white);
+	height: 25rem;
+
+	.dataUno {
+		background: linear-gradient(white, white,#f58723);
+	}
+}
+
+.talle {
+	background: linear-gradient(white, white,#d4c9ad);
+	height: 25rem;
+
+}
+
+.refaccion {
+	background: linear-gradient(#d4c9ad, white);
+	height: 25rem;
+
+}
+.tiempoDeEspera {
+	background: linear-gradient(white,#c7ba99);
+	height: 25rem;
+
+}
+.amuCircular {
+	background: linear-gradient( #c7ba99, #f58723 );
+	height: 25rem; }
+
+/*
+
+talle
+refaccion
+tiempoDeEspera
+amuCircular*/
 
 /*MANIFIESTO ----------------------------------------------------------*/
 
