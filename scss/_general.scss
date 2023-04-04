@@ -1,9 +1,8 @@
-
 /*General ---------------------------------------*/
 
 * {
-    margin: 0px;
-    padding: 0px;
+	margin: 0px;
+	padding: 0px;
 }
 
 body {
@@ -14,9 +13,9 @@ html {
 	font-size: 62.5%;
 }
 
-@mixin parrafos ($size, $alineacion){
-    font-size: $size ;
-    text-align: $alineacion ;
+@mixin parrafos ($size, $alineacion) {
+	font-size: $size ;
+	text-align: $alineacion ;
 }
 
 .parrafos {
@@ -36,9 +35,11 @@ html {
 	justify-content: center;
 	background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
 	filter: blur(70%);
-	h1{
+
+	h1 {
 		font-size: 4rem;
 	}
+
 	a {
 		text-transform: capitalize;
 		color: $color_4;
@@ -56,10 +57,12 @@ html {
 	font-style: italic;
 	text-transform: uppercase;
 }
+
 .secManifiesto {
 	a {
 		font-size: 2rem;
 	}
+
 	font-size: 2rem;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -80,9 +83,11 @@ html {
 	color: $color_3;
 	text-transform: uppercase;
 	background: black;
+
 	h3 {
 		font-size: 3.5rem;
 	}
+
 	a {
 		img {
 			height: 15rem;
@@ -90,6 +95,7 @@ html {
 		}
 	}
 }
+
 .secRed {
 	height: 30rem;
 	display: flex;
@@ -103,40 +109,85 @@ html {
 
 /*TIENDA-----------------------------------------------------------*/
 
-@mixin estiloTienda ($color1, $color2){
-    background: linear-gradient(to bottom, $color1, $color2);
+@mixin estiloTienda ($color1, $color2) {
+	background: linear-gradient(to bottom, $color1, $color2);
 }
 
 @mixin fijoTienda {
-	display:flex;
+	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	height: 30rem;
+	height: 60rem;
+}
+
+@mixin descrip($colorA) {
+	h3 {
+		font-size: 4rem;
+		font-style: italic;
+	}
+
+	p {
+		font-size: 2rem;
+		font-style: italic;
+	}
+
+	a {
+		text-decoration: none;
+		color: $colorA;
+		font-weight: bolder;
+		font-size: 1.3rem;
+		text-transform: uppercase;
+
+	}
 }
 
 
 
 .holaTienda {
-   @include estiloTienda(rgb(255, 255, 255),#f58723 );
-	@include fijoTienda;
+	@include estiloTienda(rgb(255, 255, 255), #f58723);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 	flex-direction: column;
-	
+
+	h2 {
+		font-size: 8rem;
+		text-transform: uppercase;
+		font-weight: lighter;
+	}
+}
+
+
+.amuPoesia {
+	@include estiloTienda(#f58723, #f1ecdf);
+	@include fijoTienda;
+
+	.descripcionProducto {
+		@include descrip(#23baf5);
+	}
+
 
 }
-.amuPoesia {
-	@include estiloTienda(#f58723 ,#f1ecdf);
-	@include fijoTienda;
-	
-}
+
 .amuPintura {
-	@include estiloTienda(#f1ecdf,#c7ba99);
-	@include fijoTienda;	
-	
-}
-.amuFotografia {
-	@include estiloTienda( #c7ba99,white);
+	@include estiloTienda(#f1ecdf, #c7ba99);
 	@include fijoTienda;
-	
+
+	.descripcionProducto {
+		@include descrip(#86613e);
+	}
+
+}
+
+.amuFotografia {
+	@include estiloTienda(#c7ba99, white);
+	@include fijoTienda;
+
+	.descripcionProducto {
+		@include descrip(#751f1f);
+	}
+
+
 }
 
 .dataTienda {
@@ -144,12 +195,12 @@ html {
 	height: 25rem;
 
 	.dataUno {
-		background: linear-gradient(white, white,#f58723);
+		background: linear-gradient(white, white, #f58723);
 	}
 }
 
 .talle {
-	background: linear-gradient(white, white,#d4c9ad);
+	background: linear-gradient(white, white, #d4c9ad);
 	height: 25rem;
 
 }
@@ -159,14 +210,17 @@ html {
 	height: 25rem;
 
 }
+
 .tiempoDeEspera {
-	background: linear-gradient(white,#c7ba99);
+	background: linear-gradient(white, #c7ba99);
 	height: 25rem;
 
 }
+
 .amuCircular {
-	background: linear-gradient( #c7ba99, #f58723 );
-	height: 25rem; }
+	background: linear-gradient(#c7ba99, #f58723);
+	height: 25rem;
+}
 
 /*
 

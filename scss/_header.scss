@@ -4,15 +4,19 @@
 	background-color: $background-color_1;
 	height: 10rem;
 }
+
 .logo {
 	width: 75%;
 	height: max-content;
 }
+
 .hea {
 	height: 10%;
 	position: sticky;
 	top: 0px;
+	z-index: 2;
 }
+
 .anclas {
 	text-decoration: none;
 	color: $color_1;
@@ -21,6 +25,7 @@
 	font-family: $font-family_1;
 	margin: 0 40px 0 0;
 	letter-spacing: 0.4rem;
+
 	&:hover {
 		color: $color_2;
 	}
