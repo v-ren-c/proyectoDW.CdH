@@ -4,7 +4,6 @@
     width: 60%;
   }
 }
-
 @media (max-width: 550px) {
   .headerMQ {
     display: flex;
@@ -14,7 +13,6 @@
     padding-right: 0px;
   }
 }
-
 @media (max-width: 991px) {
   .menuMQ {
     background-color: rgba(0, 0, 0, 0.993);
@@ -22,21 +20,18 @@
     border-radius: 4px;
   }
 }
-
 @media (max-width: 720px) {
   .secManifiesto p {
     font-size: 1.5rem;
     font-weight: bold;
   }
 }
-
 @media (max-width: 412px) {
   .secManifiesto p {
     font-size: 1rem;
     font-weight: bold;
   }
 }
-
 /*fin mediasqueris*/
 /*General ---------------------------------------*/
 * {
@@ -45,7 +40,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: #f58723;
 }
 
 html {
@@ -70,11 +65,9 @@ html {
   background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(255, 255, 255));
   filter: blur(70%);
 }
-
 .secPortada h1 {
   font-size: 4rem;
 }
-
 .secPortada a {
   text-transform: capitalize;
   color: black;
@@ -104,7 +97,6 @@ html {
   background-image: url(../img/fondo.jpg);
   background-size: 20px 20px;
 }
-
 .secManifiesto a {
   font-size: 2rem;
 }
@@ -118,11 +110,9 @@ html {
   text-transform: uppercase;
   background: black;
 }
-
 .secTienda h3 {
   font-size: 3.5rem;
 }
-
 .secTienda a img {
   height: 15rem;
   width: 20rem;
@@ -141,37 +131,33 @@ html {
 
 /*TIENDA-----------------------------------------------------------*/
 .holaTienda {
-  background: linear-gradient(to bottom, rgb(255, 255, 255), #f58723);
+  background: linear-gradient(to bottom, #f58723, white);
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
 }
-
 .holaTienda h2 {
-  font-size: 8rem;
+  font-size: 6rem;
   text-transform: uppercase;
   font-weight: lighter;
 }
 
 .amuPoesia {
-  background: linear-gradient(to bottom, #f58723, #f1ecdf);
+  background: linear-gradient(to bottom, white, #f58723);
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 60rem;
 }
-
 .amuPoesia .descripcionProducto h3 {
   font-size: 4rem;
   font-style: italic;
 }
-
 .amuPoesia .descripcionProducto p {
   font-size: 2rem;
   font-style: italic;
 }
-
 .amuPoesia .descripcionProducto a {
   text-decoration: none;
   color: #23baf5;
@@ -181,23 +167,20 @@ html {
 }
 
 .amuPintura {
-  background: linear-gradient(to bottom, #f1ecdf, #c7ba99);
+  background: linear-gradient(to bottom, #f58723, white);
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 60rem;
 }
-
 .amuPintura .descripcionProducto h3 {
   font-size: 4rem;
   font-style: italic;
 }
-
 .amuPintura .descripcionProducto p {
   font-size: 2rem;
   font-style: italic;
 }
-
 .amuPintura .descripcionProducto a {
   text-decoration: none;
   color: #86613e;
@@ -207,23 +190,20 @@ html {
 }
 
 .amuFotografia {
-  background: linear-gradient(to bottom, #c7ba99, white);
+  background: linear-gradient(to bottom, white, #f58723);
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 60rem;
 }
-
 .amuFotografia .descripcionProducto h3 {
   font-size: 4rem;
   font-style: italic;
 }
-
 .amuFotografia .descripcionProducto p {
   font-size: 2rem;
   font-style: italic;
 }
-
 .amuFotografia .descripcionProducto a {
   text-decoration: none;
   color: #751f1f;
@@ -232,41 +212,23 @@ html {
   text-transform: uppercase;
 }
 
-.dataTienda {
-  background: linear-gradient(rgb(255, 255, 255), white, white, white, white);
-  height: 25rem;
+#sobreBuzos {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
-.dataTienda .dataUno {
-  background: linear-gradient(white, white, #f58723);
+.bloqueInfo {
+  display: flex;
+  justify-items: space-between;
+  text-align: justify;
+  background-color: #f58723;
 }
-
-.talle {
-  background: linear-gradient(white, white, #d4c9ad);
-  height: 25rem;
+.bloqueInfo .produccionInfo {
+  text-transform: uppercase;
+  text-justify: distribute-all-lines;
+  font-size: 1.5rem;
 }
-
-.refaccion {
-  background: linear-gradient(#d4c9ad, white);
-  height: 25rem;
-}
-
-.tiempoDeEspera {
-  background: linear-gradient(white, #c7ba99);
-  height: 25rem;
-}
-
-.amuCircular {
-  background: linear-gradient(#c7ba99, #f58723);
-  height: 25rem;
-}
-
-/*
-
-talle
-refaccion
-tiempoDeEspera
-amuCircular*/
 /*MANIFIESTO ----------------------------------------------------------*/
 .manifiesto {
   font-size: 2rem;
@@ -313,7 +275,6 @@ form {
   margin: 0 40px 0 0;
   letter-spacing: 0.4rem;
 }
-
 .anclas:hover {
   color: rgba(227, 230, 97, 0.8);
 }
@@ -333,22 +294,18 @@ footer {
   align-items: center;
   padding-top: 7px;
 }
-
 footer p {
   margin-left: 15px;
   color: whitesmoke;
 }
-
 footer ul {
   display: flex;
   list-style: none;
   margin-right: 15px;
 }
-
 footer li {
   margin: 0 30px;
 }
-
 footer a img {
   height: 20px;
   width: 20px;

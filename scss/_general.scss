@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: white;
+	background-color:#f58723;
 }
 
 html {
@@ -109,6 +109,8 @@ html {
 
 /*TIENDA-----------------------------------------------------------*/
 
+//mixins 
+
 @mixin estiloTienda ($color1, $color2) {
 	background: linear-gradient(to bottom, $color1, $color2);
 }
@@ -141,25 +143,32 @@ html {
 	}
 }
 
+@mixin info{
+	text-transform: uppercase;
+	text-justify: distribute-all-lines;
+}
+
+//Encabezado 
 
 
 .holaTienda {
-	@include estiloTienda(rgb(255, 255, 255), #f58723);
+	@include estiloTienda( #f58723, white);
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	flex-direction: column;
 
 	h2 {
-		font-size: 8rem;
+		font-size: 6rem;
 		text-transform: uppercase;
 		font-weight: lighter;
 	}
 }
 
+//Productos-Artistas
 
 .amuPoesia {
-	@include estiloTienda(#f58723, #f1ecdf);
+	@include estiloTienda(white, #f58723);
 	@include fijoTienda;
 
 	.descripcionProducto {
@@ -168,9 +177,8 @@ html {
 
 
 }
-
 .amuPintura {
-	@include estiloTienda(#f1ecdf, #c7ba99);
+	@include estiloTienda( #f58723, white);
 	@include fijoTienda;
 
 	.descripcionProducto {
@@ -178,9 +186,8 @@ html {
 	}
 
 }
-
 .amuFotografia {
-	@include estiloTienda(#c7ba99, white);
+	@include estiloTienda( white,#f58723 );
 	@include fijoTienda;
 
 	.descripcionProducto {
@@ -190,44 +197,30 @@ html {
 
 }
 
-.dataTienda {
-	background: linear-gradient(rgb(255, 255, 255), white, white, white, white);
-	height: 25rem;
+//info tienda
 
-	.dataUno {
-		background: linear-gradient(white, white, #f58723);
+#sobreBuzos{
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration:underline;
+}
+.bloqueInfo {
+	display: flex;
+	justify-items: space-between;
+	text-align: justify;
+	background-color: #f58723;
+	.produccionInfo{
+		text-transform: uppercase;
+	text-justify: distribute-all-lines;
+	font-size: 1.5rem;
 	}
-}
+	.tallesInfo{}
+	.videoTallesInfo{}
+	.circularInfo{}
 
-.talle {
-	background: linear-gradient(white, white, #d4c9ad);
-	height: 25rem;
+	}
 
-}
 
-.refaccion {
-	background: linear-gradient(#d4c9ad, white);
-	height: 25rem;
-
-}
-
-.tiempoDeEspera {
-	background: linear-gradient(white, #c7ba99);
-	height: 25rem;
-
-}
-
-.amuCircular {
-	background: linear-gradient(#c7ba99, #f58723);
-	height: 25rem;
-}
-
-/*
-
-talle
-refaccion
-tiempoDeEspera
-amuCircular*/
 
 /*MANIFIESTO ----------------------------------------------------------*/
 
